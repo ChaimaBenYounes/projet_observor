@@ -1,0 +1,24 @@
+<?php
+include 'connexionDB.php' ;
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><h2>Inscription</h2></p>
+<form method="post" action="index.php">
+    <p>Nom : <input type="text" name="nom" /></p>
+    <p>Prénom :<input type="text" name="prenom" /></p>
+    <p>email :<input type="text" name="email" /></p>
+    <input type="submit" name="button" value="Envoyer" />
+</form>
+<?php
+
+affiche();
+
+?>
+</body>
+</html>

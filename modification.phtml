@@ -1,0 +1,23 @@
+<?php
+include 'connexionDB.php' ;
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><h2>Modification</h2></p>
+<form method="post" action="index.php">
+    <p>ID : <input type="text" name="id" value="<?= $_GET['id'] ?>"/></p>
+    <p>Nom : <input type="text" name="nom" value="<?= $_GET['nom'] ?>"/></p>
+    <p>Prénom :<input type="text" name="prenom" value="<?= $_GET['prenom'] ?>"/></p>
+    <p>email :<input type="text" name="email" value="<?= $_GET['email'] ?>" /></p>
+    <input type="submit" name="button" value="Modifier" />
+</form>
+<?php
+affiche();
+?>
+</body>
+</html>
